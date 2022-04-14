@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>RollDicer</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <header>
+    <h1>RollDicer 1.1</h1>
+  </header>
+  <main>
+    <div>
+      <label for="dn"><b>Qtd. Dices:</b></label>
+      <input id="dn" type="number" value="1" min="1">
+    </div>
+    <br>
+    <div>
+      <p><b>Dices:</b></p>
+      <br>
+      <input id="d4" type="radio" name="faces" value="4">
+      <label for="d4"><b>D4</b></label>
+      <input id="d10" type="radio" name="faces" value="10">
+      <label for="d10"><b>D10</b></label>
+      <input id="d20" type="radio" name="faces" value="20">
+      <label for="d20"><b>D20</b></label>
+    </div>
+    <br>
+    <div>
+      <button onclick="rolar()">Roll</button>
+    </div>
+    <br>
+    <div id="res">
+      Quantas danada online?
+    </div>
+    <div id="rolagens"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
